@@ -13,7 +13,7 @@ public class QRCodeGenerator
         {
             String details = "Welcome User! This QR Code is Generated using Java.";
 
-            ByteArrayOutputStream out = QRCode.from(details).to(ImageType.JPG).stream();
+            ByteArrayOutputStream out = QRCode.from(details).to(ImageType.JPG).stream();   //Feel Free to Play with image type.
 
             File f = new File("/home/sanketp/Desktop/folder/MyQR.jpg"); //Type the Complete Path Where you want to save the generated QRCode.
             FileOutputStream fos = new FileOutputStream(f);
