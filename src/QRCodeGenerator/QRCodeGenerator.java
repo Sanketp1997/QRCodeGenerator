@@ -15,7 +15,7 @@ public class QRCodeGenerator
 
             ByteArrayOutputStream out = QRCode.from(details).to(ImageType.JPG).stream();   //Feel Free to Play with image type.
 
-            File f = new File("/home/sanketp/Desktop/folder/MyQR.jpg"); //Type the Complete Path Where you want to save the generated QRCode.
+            File f = new File("path_where_you_want_to_save_the_image/MyQR.jpg"); //Type the Complete Path Where you want to save the generated QRCode.
             FileOutputStream fos = new FileOutputStream(f);
             fos.write(out.toByteArray());
             fos.flush();
